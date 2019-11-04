@@ -1,0 +1,7 @@
+<listing>&lt;img src=1 onerror=alert(1)&gt;</listing>
+<listing id=x>&lt;img src=1 onerror=alert(1)&gt;</listing>
+<script>alert(document.getElementById('x').innerHTML)</script>
+&lt;img src=1 onerror=alert(1)&gt;
+“&lt;img src=1 onerror=alert(1)&gt;”
+<listing id=x>&lt;img src=1 onerror=alert(1)&gt;</listing>
+<script>alert(document.getElementById('x').innerHTML)</script>
