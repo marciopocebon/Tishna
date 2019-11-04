@@ -123,8 +123,9 @@ GetOptions(
     "aaa|ipobfuscating=s" => \$ipobfuscating,
     "aab|rfi=s" => \$rfi,
     "aac|lfi=s" => \$lfi,
-
+    "aad|banar=s" => \$banar,
 );
+
 if ($help) { banner();help(); }
 if ($audit) { banner();Audit(); }
 if ($extractresponsesheader) { banner();Extractresponsesheader(); }
@@ -181,7 +182,7 @@ if ($httpfuzzer) { banner();Httpfuzzer(); }
 if ($ipobfuscating) { banner();Ipobfuscating(); }
 if ($rfi) { banner();Rfi(); }
 if ($lfi) { banner();Lfi(); }
-if ($binary) { banner()Binary(); }
+if ($banar) { banner();Banar(); }
 
 unless (@ARGV > 1) { banner();menu(); }
 
@@ -1114,9 +1115,9 @@ sub menu {
         print line_u(),color('bold cyan'),"        #";print color('reset'),item(),"Enter Target Website in Absolute Format";print color('bold cyan'),"          #   \n",line_d();
         print color('bold green'),"\n\ntishna: _>  ";
         print color('bold white');
-        chomp($binary=<STDIN>);
+        chomp($banar=<STDIN>);
         print "\n";
-        Binary();
+        Banar();
         enter();
    }
       if($number eq '0'){
@@ -2104,7 +2105,7 @@ $ua->agent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20130401 Firefox/
 	$| = 1; # Clear the buffer here
 	print item(),"Starting Curl Based Payloads \n";
 	sleep 5;	
-	system "curl '$url' --data-binary @request"; # curl based buffer exploit for IIS servers
+	system "curl '$url' --data-bbinary @request"; # curl based buffer exploit for IIS servers
 
 if ( $res->as_string () =~ m/rel='canonical'/ ) {
 print color("BOLD WHITE"), "\n\n[ + ] The result could be canonical and false positive", "\n";
@@ -3240,7 +3241,7 @@ sub convert
         
 }
 
-print item(),"IP for binary conversion is: "; 
+print item(),"IP for bbinary conversion is: "; 
 system("./ip2bin.sh");
 
 
@@ -3276,10 +3277,10 @@ sub Lfi () {
 
 
 #-----------------------------------------------#
-# 56 Binary Buffer Overflow Finder              #
+# 56 bbinary Buffer Overflow Finder              #
 #-----------------------------------------------#
-sub Binary () { 
-	if (system("./binary.sh") == 0) {
+sub bbinary () { 
+	if (system("./bbinary.sh") == 0) {
     print "\n";
 	print item(), "Success!\n";
 	}
