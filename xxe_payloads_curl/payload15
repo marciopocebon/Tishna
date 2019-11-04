@@ -1,0 +1,6 @@
+ <?xml version='1.0'?>
+<!DOCTYPE data [
+<!ELEMENT data (#ANY)>
+<!ENTITY remote SYSTEM "http://localhost/payload_17_file.xml">
+]>
+<data>&remote;</data>
